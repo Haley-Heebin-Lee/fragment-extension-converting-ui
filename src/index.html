@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fragments UI</title>
+    <link rel="stylesheet" href="https://unpkg.com/bamboo.css" />
+   
+    
+  </head>
+  <body>
+    <h1>Fragments UI</h1>
+    <section>
+      
+    <nav><button id="login">Login</button> <button id="logout">Logout</button></nav>
+    </section>
+    <section hidden id="user">
+      <h2>Hello <span class="username"></span>!</h2>
+    </section>
+    <br>
+
+    <label>Choose type of input</label>
+    <select name="types" id="types" required>
+      <option value="application/json">application/json</option>
+      <option value="text/html">text/html</option>
+      <option value="text/plain">text/plain</option>
+      <option value="text/markdown">text/markdown</option>
+      <option value="image/jpeg">image/jpeg</option>
+      <option value="image/png">image/png</option>
+      <option value="image/webp	">image/webp</option>
+      <option value="image/gif">image/gif</option>
+    </select>
+    
+    <br><br>
+    <section>
+    <textarea type="text" id="data"></textarea>
+
+    <br><br>
+    <label class="button" tabindex="0">Import a file:
+    <input type="file" id="inputFile" multiple>
+    </label>
+
+    <button type="submit" id="postBtn"> Save Data</button>
+    
+    <br>
+    </section>
+
+    <br>
+
+    <input type="text" id="givenId">
+    <button id="getbyidBtn"> Get Data by Id</button>
+    <button id="getbyidInfoBtn"> Get metadata by Id</button>
+    <button id="delete"> Delete</button>
+    <button type="submit" id="update"> Update</button>
+    <br><br>
+
+    <button id="getBtn"> Get Data</button>
+    <button id="getExtendedBtn"> Get extended Data</button>
+    <br><br>
+    <label>Fragment data got back:</label>
+    <div id="dataReceived"></div>
+    <img id="imageReceived">
+
+    </section>
+  
+  </body>
+  <script type="module" src="./app.js"></script>
+  
+</html>
